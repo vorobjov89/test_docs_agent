@@ -1,0 +1,250 @@
+[
+  {
+    "document_id": "D230166734-01",
+    "type": "addendum",
+    "document_date": "2020-08-19",
+    "effective_date": "2023-04-01",
+    "parent_contract_ids": [
+      "D200262543-01"
+    ],
+    "referenced_contract_ids": [
+      "D200262543-01"
+    ],
+    "page_count": 2,
+    "source": "Договор D200262543-01/D230166734-01.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D240114026-01",
+    "type": "addendum",
+    "document_date": "2020-08-19",
+    "effective_date": null,
+    "parent_contract_ids": [
+      "D200262543-01"
+    ],
+    "referenced_contract_ids": [
+      "D200262543-01"
+    ],
+    "page_count": 75,
+    "source": "Договор D200262543-01/D240114026-01.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D240128432-01",
+    "type": "addendum",
+    "document_date": "2020-08-19",
+    "effective_date": "2024-05-01",
+    "parent_contract_ids": [
+      "D200262543-01"
+    ],
+    "referenced_contract_ids": [
+      "D200262543-01",
+      "D200275816-01"
+    ],
+    "page_count": 13,
+    "source": "Договор D200262543-01/D240128432-01.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D200262543-01",
+    "type": "contract",
+    "document_date": "2020-08-19",
+    "effective_date": null,
+    "parent_contract_ids": [],
+    "referenced_contract_ids": [],
+    "page_count": 66,
+    "source": "Договор D200262543-01/Проект Договора.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D170035583-09",
+    "type": "addendum",
+    "document_date": "2015-12-15",
+    "effective_date": null,
+    "parent_contract_ids": [
+      "D150641492-09"
+    ],
+    "referenced_contract_ids": [
+      "D150641492-08",
+      "D150641492-09",
+      "D170036583-09"
+    ],
+    "page_count": 4,
+    "source": "Задание_D150641492-09/D170035583-09.pdf",
+    "warnings": [
+      "PDF contains little/no extractable text; OCR fallback was used.",
+      "Parent contract ID was recovered from the source folder because the scanned title was not parsed reliably."
+    ]
+  },
+  {
+    "document_id": "D260209300-01",
+    "type": "addendum",
+    "document_date": "2015-12-15",
+    "effective_date": "2026-07-01",
+    "parent_contract_ids": [
+      "D150641492-09"
+    ],
+    "referenced_contract_ids": [
+      "D150641492-09"
+    ],
+    "page_count": 2,
+    "source": "Задание_D150641492-09/D260209300.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D210177892-01",
+    "type": "addendum",
+    "document_date": "2021-07-07",
+    "effective_date": null,
+    "parent_contract_ids": [
+      "D210003801-01"
+    ],
+    "referenced_contract_ids": [
+      "D210003801-01"
+    ],
+    "page_count": 8,
+    "source": "Задание_D210003801-01/30.06.2021 ДС4_MNP_ООО Ариадна +юрv2.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D210355320-01",
+    "type": "addendum",
+    "document_date": "2021-10-21",
+    "effective_date": null,
+    "parent_contract_ids": [
+      "D210003801-01"
+    ],
+    "referenced_contract_ids": [
+      "D210003801-01",
+      "D210274628-01"
+    ],
+    "page_count": 10,
+    "source": "Задание_D210003801-01/ДС3 Ариадна_октябрь.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D210003801-01",
+    "type": "contract",
+    "document_date": "2021-01-25",
+    "effective_date": null,
+    "parent_contract_ids": [],
+    "referenced_contract_ids": [],
+    "page_count": 67,
+    "source": "Задание_D210003801-01/Договор ЛК МР Москва и МОАриадна.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D240050194-01",
+    "type": "addendum",
+    "document_date": "2022-08-23",
+    "effective_date": null,
+    "parent_contract_ids": [
+      "D220600738-01"
+    ],
+    "referenced_contract_ids": [
+      "D220600738-01",
+      "D240022231-01"
+    ],
+    "page_count": 2,
+    "source": "Задание_D220600738-01/ДС+Консервация_D220600738-01_Орион+телеком_4+версия.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D240022231-01",
+    "type": "addendum",
+    "document_date": "2022-08-23",
+    "effective_date": null,
+    "parent_contract_ids": [
+      "D220600738-01"
+    ],
+    "referenced_contract_ids": [
+      "D220600738-01"
+    ],
+    "page_count": 2,
+    "source": "Задание_D220600738-01/ДС+расторжение_D220600738-01_Орион+телеком..pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D230344376-01",
+    "type": "addendum",
+    "document_date": "2022-08-23",
+    "effective_date": "2023-11-01",
+    "parent_contract_ids": [
+      "D220600738-01"
+    ],
+    "referenced_contract_ids": [
+      "D220600738-01"
+    ],
+    "page_count": 3,
+    "source": "Задание_D220600738-01/Доп_соглашение_Орион+телеком+к_договору_D220600738_01_2.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D240049233-01",
+    "type": "addendum",
+    "document_date": "2023-11-01",
+    "effective_date": "2023-11-01",
+    "parent_contract_ids": [
+      "D220600738-01"
+    ],
+    "referenced_contract_ids": [
+      "D220600738-01",
+      "D230344376-01"
+    ],
+    "page_count": 5,
+    "source": "Задание_D220600738-01/Доп_соглашение_Орион+телеком+к_договору_D220600738_01_4+версия_с+дополнениями_ВЕРНЫЙ (2) (1).pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D220600738-01",
+    "type": "contract",
+    "document_date": null,
+    "effective_date": null,
+    "parent_contract_ids": [],
+    "referenced_contract_ids": [],
+    "page_count": 20,
+    "source": "Задание_D220600738-01/Орион+Телеком_партнерский+договор.pdf",
+    "warnings": [
+      "PDF contains little/no extractable text; OCR fallback was used.",
+      "Document ID was recovered from the source folder because OCR could not reliably recognize the title."
+    ]
+  },
+  {
+    "document_id": "D210262441-01",
+    "type": "agreement",
+    "document_date": "2021-08-13",
+    "effective_date": "2021-07-01",
+    "parent_contract_ids": [],
+    "referenced_contract_ids": [
+      "D150641492-09",
+      "D170180653-01",
+      "D200095115-24",
+      "D200187803",
+      "D200187803-01"
+    ],
+    "page_count": 14,
+    "source": "Задание_Договор D210262441-01/D210262441-01.pdf",
+    "warnings": []
+  },
+  {
+    "document_id": "D250134282-01",
+    "type": "addendum",
+    "document_date": "2021-08-24",
+    "effective_date": "2025-06-01",
+    "parent_contract_ids": [
+      "D210262441-01"
+    ],
+    "referenced_contract_ids": [
+      "D150641492-09",
+      "D170180653-01",
+      "D200095115-24",
+      "D210207419-01",
+      "D210262441-01",
+      "D230266697-01",
+      "D240011282-01"
+    ],
+    "page_count": 17,
+    "source": "Задание_Договор D210262441-01/D250134282-01.pdf",
+    "warnings": []
+  }
+]
