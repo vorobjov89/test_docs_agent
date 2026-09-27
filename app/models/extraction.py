@@ -1,4 +1,3 @@
-
 from pydantic import BaseModel, Field
 
 from app.models.contract import ContractChange
@@ -6,6 +5,8 @@ from app.models.contract import ContractChange
 
 class ExtractedDocument(BaseModel):
     document_type: str
+
+    document_id: str | None = None
 
     contract_id: str | None = None
 
@@ -25,6 +26,12 @@ class ExtractedDocument(BaseModel):
         default_factory=list
     )
 
+    changes: list[ContractChange] = Field(
+        default_factory=list
+    )
+
+
+class ExtractedChunk(BaseModel):
     changes: list[ContractChange] = Field(
         default_factory=list
     )

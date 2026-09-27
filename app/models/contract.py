@@ -30,6 +30,9 @@ class ContractChange(BaseModel):
     old_value: str | None = None
     new_value: str | None = None
 
+    old_text: str | None = None
+    new_text: str | None = None
+
     source_page: int | None = None
 
 
@@ -63,3 +66,47 @@ class Addendum(BaseModel):
     changes: list[ContractChange] = Field(
         default_factory=list
     )
+
+
+class ContractHistory(BaseModel):
+    contract_id: str
+
+    base_contract: dict | None = None
+
+    addenda: list[dict] = Field(
+        default_factory=list
+    )
+
+    current_conditions: dict[str, str] = Field(
+        default_factory=dict
+    )
+
+    history: list[dict] = Field(
+        default_factory=list
+    )
+
+class ContractChain(BaseModel):
+    contract_id: str
+
+    base_contract: dict | None = None
+
+    addenda: list[dict] = Field(
+        default_factory=list
+    )
+
+    status: str = "complete"
+
+    warnings: list[str] = Field(
+        default_factory=list
+    )
+
+class ContractCluster(BaseModel):
+    cluster_id: str
+
+    contract_ids: list[str] = Field(
+        default_factory=list
+    )
+
+    label: str
+
+    description: str | None = None

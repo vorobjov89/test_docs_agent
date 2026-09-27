@@ -17,13 +17,4 @@ class ExtractionValidator:
                     "к которому относится дополнительное соглашение."
                 )
 
-        if (
-            result.document_type == "addendum"
-            and not result.changes
-        ):
-            errors.append(
-                "Дополнительное соглашение не содержит "
-                "распознанных изменений."
-            )
-
         return errors

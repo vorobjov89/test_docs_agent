@@ -12,33 +12,62 @@ class DocumentPipeline:
         self.extractor = DocumentExtractor()
         self.validator = ExtractionValidator()
 
-    def process(self, path: str | Path) -> dict:
+    def process(
+        self,
+        path: str | Path,
+    ) -> dict:
 
         path = Path(path)
 
-        # 1. PDF → text
-        text, pages = self.parser.parse(path)
+        # Сбрасываем состояние предыдущего документа.
+        self.extractor.failed_chunks = []
 
-        # 2. text → structured data
-        extracted = self.extractor.extract(text)
+        pages = self.parser.parse_pages(path)
 
-        # 3. validation
+        if not pages:
+            raise ValueError(
+                f"Could not extract text from {path.name}"
+            )
+
+        extracted = self.extractor.extract_pages(
+            pages
+        )
+
         errors = self.validator.validate(
             extracted
         )
 
+        failed_chunks = list(
+            self.extractor.failed_chunks
+        )
+
+        # Ошибки в обязательных метаданных.
         if errors:
             return {
                 "status": "rejected",
                 "filename": path.name,
-                "pages": pages,
+                "pages": len(pages),
                 "errors": errors,
+                "failed_chunks": failed_chunks,
                 "data": extracted.model_dump(),
             }
 
+        # Документ распознан, но часть чанков
+        # не удалось обработать.
+        if failed_chunks:
+            return {
+                "status": "partial",
+                "filename": path.name,
+                "pages": len(pages),
+                "failed_chunks": failed_chunks,
+                "data": extracted.model_dump(),
+            }
+
+        # Документ обработан полностью.
         return {
             "status": "success",
             "filename": path.name,
-            "pages": pages,
+            "pages": len(pages),
+            "failed_chunks": [],
             "data": extracted.model_dump(),
         }
