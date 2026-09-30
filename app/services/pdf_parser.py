@@ -87,4 +87,3 @@ class PDFParser:
         )
 
         return text.strip()
-    

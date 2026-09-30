@@ -26,14 +26,6 @@ def main():
     print()
 
     for index, file in enumerate(files, start=1):
-        # testset = {
-        #     "D240114026-01.pdf",
-        #     "Проект Договора.pdf",
-        #     "Договор ЛК МР Москва и МОАриадна.pdf",
-        # }
-        # if file.name not in testset:
-        #     continue
-
         print(f"[{index}/{len(files)}] Обработка: {file.name}")
 
         try:

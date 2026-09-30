@@ -2,27 +2,28 @@ import os
 
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
-
-# LLM_MODEL = os.getenv(
-# "LLM_MODEL",
-# "gpt-4.1-mini",
-# )
-
-YANDEX_API_KEY = os.getenv(
-    "YANDEX_API_KEY"
+API_KEY = os.getenv(
+    "API_KEY"
 )
-
-YANDEX_FOLDER_ID = os.getenv(
-    "YANDEX_FOLDER_ID"
-)
+if API_KEY is None:
+    raise ValueError("Переменная окружения API_KEY обязательна")
 
 BASE_URL = os.getenv(
     "BASE_URL"
 )
+if BASE_URL is None:
+    raise ValueError("Переменная окружения BASE_URL обязательна")
 
-MODEL_URI = os.getenv(
-    "MODEL_URI"
+MODEL = os.getenv(
+    "MODEL"
 )
+if MODEL is None:
+    raise ValueError("Переменная окружения MODEL обязательна")
+
+FOLDER_ID = os.getenv(
+    "FOLDER_ID"
+)
+if FOLDER_ID == "":
+    FOLDER_ID = None

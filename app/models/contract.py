@@ -18,21 +18,18 @@ class ContractCondition(BaseModel):
     name: str
     value: str
     source_page: int | None = None
+    section_context: str | None = None
 
 
 class ContractChange(BaseModel):
     section: str | None = None
-
+    section_context: str | None = None
     change_type: ChangeType
-
     description: str
-
     old_value: str | None = None
     new_value: str | None = None
-
     old_text: str | None = None
     new_text: str | None = None
-
     source_page: int | None = None
 
 
@@ -85,6 +82,13 @@ class ContractHistory(BaseModel):
         default_factory=list
     )
 
+    warnings: list[str] = Field(
+        default_factory=list
+    )
+
+    replacements: list[dict] = Field(default_factory=list)
+
+
 class ContractChain(BaseModel):
     contract_id: str
 
@@ -99,6 +103,7 @@ class ContractChain(BaseModel):
     warnings: list[str] = Field(
         default_factory=list
     )
+
 
 class ContractCluster(BaseModel):
     cluster_id: str

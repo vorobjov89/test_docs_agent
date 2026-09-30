@@ -21,6 +21,7 @@ def test_addendum_without_contract_reference():
 def test_valid_addendum():
     document = ExtractedDocument(
         document_type="addendum",
+        document_id="D210262441-02",
         referenced_contract_id="D210262441-01",
         changes=[
             ContractChange(
@@ -37,3 +38,23 @@ def test_valid_addendum():
     errors = validator.validate(document)
 
     assert errors == []
+
+
+def test_contract_changes_are_extracted():
+    document = ExtractedDocument(
+        document_type="contract",
+        changes=[
+            ContractChange(
+                change_type=ChangeType.ADD,
+                description="Добавлено условие о стоимости",
+                new_value="100000 рублей",
+                source_page=3,
+            )
+        ],
+    )
+
+    assert len(document.changes) == 1
+    assert document.changes[0].change_type == ChangeType.ADD
+    assert document.changes[0].description == "Добавлено условие о стоимости"
+    assert document.changes[0].new_value == "100000 рублей"
+    assert document.changes[0].source_page == 3
